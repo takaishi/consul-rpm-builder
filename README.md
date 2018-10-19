@@ -3,12 +3,7 @@
 ## How to build
 
 ```bash
-# create base image
-$ make base
-
-# please choose version
-$ docker build --no-cache -t consul-rpm-builder/consul:0.8.4 consul/0.8.4
-$ docker run consul-rpm-builder/consul:0.8.4 > tmp/consul-0.8.4.x86_64.rpm
+$ VERSION=0.8.4 run.sh
 ```
 
 * Installs no service (use supervisord or else according to your purpose)
